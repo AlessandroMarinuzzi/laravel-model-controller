@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
 
         <!-- Styles -->
+        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     </head>
 
     <body>
@@ -22,9 +23,9 @@
         <main>
             <div class="container">
                 @foreach($movies as $movie)
-                    <div class="movie-card">
+                    <div class="movie_card">
                         <h2 class="title">Title: {{ $movie->title }}</h2>
-                        <h3 class="original-title">Original title: {{ $movie->original_title }}</h3>
+                        <h3 class="original_title">Original title: {{ $movie->original_title }}</h3>
                         <div class="nationality">Nationality: {{ ucfirst($movie->nationality) }}</div>
                         <div class="date">Released on: {{ $movie->date }}</div>
                         <div class="vote">Vote: {{ $movie->vote }}</div>
