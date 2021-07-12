@@ -11,6 +11,6 @@ class PageController extends Controller
         // prendere dati
 
         // restituire una view
-        return view('welcome');
+        return view('home');
     }
 }
